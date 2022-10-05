@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+h1 {
+  margin-left: 255px;
+  color: rgb(225, 214, 11);
+  position: absolute;
+  animation-name: text;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  /* animation-fill-mode: forwards; */
+
+}
+.img {
+  width: 100%;
+  height: 740px;
+}
+.bal {
+  width: 150px;
+  margin-top: -315px;
+  margin-left: 345px;
+  height: 150px;
+  animation-name: bal;
+  animation-duration: 8s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-duration: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  /* animation-direction: alternate; */
+}
+@keyframes text{
+    0%{
+        color: yellow;
+        left: 0;
+    }
+    100%{
+        color: red;
+        left: 660px;
+    }
+}
+@keyframes bal {
+  0% {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  20% {
+    position: relative;
+    top: 0px;
+    left: 300px;
+  }
+
+  45% {
+    position: relative;
+    top: 132px;
+    left: 1px;
+  }
+  70% {
+    position: relative;
+    top: -1px;
+    left: -300px;
+    /* z-index: 12; */
+  }
+   90% {
+    position: relative;
+    top: -130px;
+    left: 0px;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+    left: 300px;
+  }   
+}
